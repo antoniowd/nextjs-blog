@@ -1,17 +1,18 @@
 import type { NextPage } from "next"
 import Head from "next/head"
+import { Flex, Heading } from "@chakra-ui/react"
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Flex h="100vh" align="center" justify="center">
       <Head>
         <title>My Blog</title>
         <meta name="description" content="My blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>My Blog</main>
-    </div>
+      <Heading>Hello from my blog!</Heading>
+    </Flex>
   )
 }
 
